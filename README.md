@@ -7,3 +7,5 @@ Works offline
 
 
 ## Refrences
+https://github.com/LibreTranslate/LibreTranslate
+https://github.com/kerrickstaley/genanki
