@@ -77,12 +77,12 @@ def main():
     for word in translation_dict.keys():
         note = genanki.Note(
             model=genanki.BASIC_MODEL,
-            fields=[word, translation_dict[word]]
+            fields=['{} ({})'.format(word, FROM_LANGUAGE), '{} ({})'.format(translation_dict[word], TO_LANGUAGE )]
         )
         
         note_reverse = genanki.Note(
             model=genanki.BASIC_MODEL,
-            fields=[translation_dict[word], word]
+            fields=['{} ({})'.format(translation_dict[word], TO_LANGUAGE ), '{} ({})'.format(word, FROM_LANGUAGE)]
         )
         
         deck.add_note(note)
